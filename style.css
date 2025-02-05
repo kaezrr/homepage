@@ -11,24 +11,71 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: blanchedalmond;
+  gap: 10vh;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  margin: 0px;
+}
+
+p {
+  font-family: "Roboto";
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
 }
 
 .profile {
-  height: 50vh;
-  width: 80vw;
+  height: 400px;
+  width: 300px;
   background-image: url("img/profile.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+  box-shadow: 1px 1px 8px black;
 }
 
 .profile > h1 {
   color: white;
-  font-family: "Playfair Display";
   font-weight: normal;
   position: absolute;
   font-size: 4rem;
   bottom: 0%;
   left: 10%;
-  margin: 0px;
+}
+
+section > h1 {
+  font-size: 2.5rem;
+}
+
+section > p {
+  font-size: 1.3rem;
+  line-height: 30px;
+  color: #3e3e3e;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 8%;
+  gap: 10px;
+}
+
+address {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 30px;
+}
+
+address > a > img {
+  width: 32px;
 }
