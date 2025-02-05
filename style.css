@@ -11,7 +11,6 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: blanchedalmond;
-  padding: 0px 5%;
   gap: 8vh;
 }
 
@@ -35,10 +34,12 @@ p {
 }
 
 header,
-main {
+main,
+footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0px 5%;
 }
 
 header {
@@ -47,6 +48,28 @@ header {
 
 main {
   gap: 5vh;
+  padding-bottom: 5vh;
+}
+
+footer {
+  padding: 5vh 0px 0px;
+  gap: 3vh;
+  align-items: flex-start;
+  background-color: darkslateblue;
+  color: white;
+}
+
+footer > :not(img) {
+  padding: 0px 3vh;
+}
+
+footer > img {
+  width: 100%;
+  object-fit: contain;
+}
+
+footer > h1 {
+  margin: auto;
 }
 
 .profile {
@@ -153,4 +176,20 @@ address > a > img {
 
 .project-card:nth-of-type(6) > img {
   background-color: darkmagenta;
+}
+
+footer > p:nth-of-type(1) {
+  font-size: 1.3rem;
+}
+
+footer > p {
+  font-size: 1.1rem;
+}
+
+.blue-decoration {
+  position: absolute;
+  background-color: #0891b2;
+  height: 50vh;
+  width: 1000vw;
+  transform: rotateZ(-30deg) translateY(-40%);
 }
