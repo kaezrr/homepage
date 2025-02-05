@@ -34,23 +34,36 @@ p {
 }
 
 header,
-main,
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 5%;
 }
 
 header {
   position: relative;
   overflow-x: clip;
+  padding: 0px 5vw;
   gap: 3vh;
+}
+
+main > h1 {
+  text-align: center;
+  margin-bottom: 5vh;
 }
 
 main {
   gap: 5vh;
   padding-bottom: 5vh;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5vw;
+  gap: 30px;
 }
 
 footer {
@@ -67,7 +80,7 @@ footer > :not(img) {
 
 footer > img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 footer > h1 {
@@ -118,7 +131,7 @@ address > a > img {
 }
 
 .project-card {
-  width: 95%;
+  max-width: 320px;
   height: 350px;
   box-shadow: 1px 1px 8px black;
   display: grid;
@@ -197,4 +210,46 @@ footer > p {
   width: 2000px;
   z-index: -1;
   box-shadow: 1px 1px 8px black;
+}
+
+@media (min-width: 600px) {
+  main > h1 {
+    text-align: left;
+    margin-left: 8%;
+  }
+
+  footer > h1 {
+    margin-left: 0px;
+  }
+
+  footer {
+    padding: 5%;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(5, 5vh);
+    grid-template-columns: 3fr 2fr;
+  }
+
+  footer > p,
+  footer > h1,
+  footer > address {
+    padding: 0px;
+  }
+
+  footer > address {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  footer > img {
+    grid-row: 1 / 6;
+    grid-column: 2 / 3;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: 2fr 3fr;
+  }
 }
