@@ -11,11 +11,20 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: blanchedalmond;
-  gap: 10vh;
+  padding: 0px 5%;
+  gap: 8vh;
 }
 
 h1 {
   font-family: "Playfair Display";
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin: 0px;
+}
+
+h3 {
+  font-family: "Playfair Display";
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 0px;
 }
@@ -25,11 +34,19 @@ p {
   margin: 0px;
 }
 
-header {
+header,
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+header {
   gap: 3vh;
+}
+
+main {
+  gap: 5vh;
 }
 
 .profile {
@@ -51,10 +68,6 @@ header {
   left: 10%;
 }
 
-section > h1 {
-  font-size: 2.5rem;
-}
-
 section > p {
   font-size: 1.3rem;
   line-height: 30px;
@@ -65,7 +78,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 8%;
   gap: 10px;
 }
 
@@ -78,4 +90,67 @@ address {
 
 address > a > img {
   width: 32px;
+}
+
+.project-card {
+  width: 95%;
+  height: 350px;
+  box-shadow: 1px 1px 8px black;
+  display: grid;
+  grid-template-rows: 60% 2fr 3fr;
+  grid-template-columns: 60% 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.project-card > a > img {
+  width: 24px;
+}
+
+.project-card > a:nth-child(4) {
+  justify-self: flex-start;
+}
+
+.project-card > img {
+  align-self: stretch;
+  justify-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 4;
+  font-family: "Playfair Display";
+  font-size: 2rem;
+  padding: 20px;
+  color: white;
+}
+
+.project-card > p {
+  grid-column: 1 / 4;
+  padding: 0px 10%;
+  font-size: 1.2rem;
+  align-self: flex-start;
+}
+
+.project-card:nth-of-type(1) > img {
+  background-color: blueviolet;
+}
+
+.project-card:nth-of-type(2) > img {
+  background-color: orange;
+}
+
+.project-card:nth-of-type(3) > img {
+  background-color: limegreen;
+}
+
+.project-card:nth-of-type(4) > img {
+  background-color: palevioletred;
+}
+
+.project-card:nth-of-type(5) > img {
+  background-color: navy;
+}
+
+.project-card:nth-of-type(6) > img {
+  background-color: darkmagenta;
 }
