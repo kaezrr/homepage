@@ -43,6 +43,8 @@ footer {
 }
 
 header {
+  position: relative;
+  overflow-x: clip;
   gap: 3vh;
 }
 
@@ -55,7 +57,7 @@ footer {
   padding: 5vh 0px 0px;
   gap: 3vh;
   align-items: flex-start;
-  background-color: darkslateblue;
+  background-color: #0891b2;
   color: white;
 }
 
@@ -189,7 +191,10 @@ footer > p {
 .blue-decoration {
   position: absolute;
   background-color: #0891b2;
-  height: 50vh;
-  width: 1000vw;
-  transform: rotateZ(-30deg) translateY(-40%);
+  transform-origin: bottom left;
+  transform: rotateZ(-15deg) translateY(-20vh);
+  height: 800px;
+  width: 2000px;
+  z-index: -1;
+  box-shadow: 1px 1px 8px black;
 }
